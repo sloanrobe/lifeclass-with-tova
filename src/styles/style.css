@@ -1,4 +1,4 @@
-#biography {
+.biography {
     position: relative;
     display: flex;
     justify-content: center;
@@ -6,10 +6,19 @@
     height: 100%;
 }
 
-#biography img {
+.biography img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
+}
+
+.bio-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 1.5em;
+    background-color: lightblue;
 }
 
 .image-quote {
@@ -28,34 +37,50 @@
     font-size: 4em;
 }
 
-#bio-content {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    font-size: 2em;
+#headshot {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 
-#headshot {
-    height: auto;
-    width: auto;
+.button {
+    background-color: lightblue;
+}
+
+.button-schedule {
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+}
+
+.help {
+    background-color: lightblue;
+    padding: 15px;
 }
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding: 10px 20px;
+    position: relative;
+    background-color: #809AA7;
 }
 
 .navbar h1 {
     margin-left: 15px;
+    color: #417933;
 }
 
 .nav-links {
     list-style-type: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-25%);
     display: flex;
-    gap: 60px;
-    margin-left: 190px;
+    gap: 50px;
+    width: 600px;
 }
 
 .nav-links a {
@@ -77,26 +102,23 @@ h2 {
     text-align: center;
 }
 
-.navbar {
-    position: relative;
-    justify-content: flex-start;
-}
-
 h1 {
     font-family: 'Playwrite CA', cursive;
     color: purple;
 }
 
-.nav-links {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 50px;
-    width: 600px;
-}
-
 li {
     list-style-type: none;
     text-align: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+.button-design {
+    font-size: 1.5rem;
+    border-radius: 10%;
 }

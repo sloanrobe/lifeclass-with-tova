@@ -1,23 +1,61 @@
 import React from 'react';
-import Topics from './Topics';
-import './style.css';
-import './topics.css';
-import './testimonials.css';
-
-const topics1 = ['Daily Happiness', 'Gratitude', 'Life Purpose', 'Self-Esteem', 'Self-Love', 'Self-Care', 'Connection', 'Growth', 'Friendships', 'Relationships', 'Communication', 'Entrepreneurship'];
-const topics2 = ['Love', 'Success', 'Self-Sufficiency', 'Motivation', 'Stuckness', 'Reflection', 'Journaling', 'Chakras', 'Energy', 'Stillness', 'Breathing', 'Spiritual Guidance'];
-const topics3 = ['Timelines', 'Tolerance', 'Conflict Resolution', 'Judgement', 'Fear', 'Anxiety', 'Impulsivity', 'Rejection', 'Guilt', 'Shame', 'Depression', 'Consciousness'];
+import './styles/style.css';
+import './styles/topics.css';
+import './styles/testimonials.css';
+import Biography from './components/Biography';
+import TopicBigBox from './components/TopicsBigBox';
+import MyButton from './components/MyButton';
+import TopicsBottomBox from './components/TopicsBottomBox';
+import Help from './components/Help';
+import Testimonials from './components/Testimonials';
 
 function App() {
   return (
     <div className="App">
-      <h2>Discussion Topics</h2>
-      <div className="topics-top">
-        <Topics topicList={topics1} className="topics1" />
-        <Topics topicList={topics2} className="topics2" />
-        <Topics topicList={topics3} className="topics3" />
-      </div>
-    </div>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./images/LifeClass_with_Tova_Logo_No_Background.PNG" alt="LifeClass with Tova logo"></img>
+            </div>
+            <h1>LifeClass with Tova</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#birth">The Birth of LifeClass</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    
+        <div id="biography-section">
+            <Biography />
+        </div>
+
+        <div className="topics-top">
+            <TopicBigBox />
+        </div>
+
+        <div className="button-schedule">
+            <MyButton />
+        </div>
+    
+        <div class="topics-bottom-wrapper">
+            <TopicsBottomBox />
+        </div>
+
+        <div className="help-section">
+            <Help />
+        </div>
+
+        <br />
+
+        <div className="testimonials">
+            <Testimonials />
+        </div>
+        
+        <footer>
+
+        </footer>
+  
+    </div>   
   );
 }
 

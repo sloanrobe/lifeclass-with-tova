@@ -1,8 +1,30 @@
+.topics-section {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.topics-section h2 {
+  margin-bottom: 1rem;
+}
+
 .topics-top {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* Makes it responsive */
+}
+
+.topicBigBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .topics-top {
     display: flex;
     justify-content: center;
     gap: 90px;
-}
+} */
 
 .topics1, .topics2, .topics3 {
     border: 10px solid black;
@@ -66,7 +88,7 @@
 .session2 h3,
 .session3 h3 {
     color: #417933;
-    font-size: 2.5em;
+    font-size: 1.5em;
     margin-bottom: 10px;
 }
 
@@ -74,6 +96,6 @@
 .session2 p,
 .session3 p {
     color: #333;
-    font-size: 1.75em;
+    font-size: 1.5em;
     line-height: 1.4em;
 }
