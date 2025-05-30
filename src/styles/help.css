@@ -1,0 +1,43 @@
+.help {
+    background-color: lightblue;
+    padding: 15px;
+}
+
+.session-types {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.session1,
+.session2,
+.session3 {
+    flex: 1 1 250px;
+    max-width: 300px;
+    background-color: #f7fdf6;
+    padding: 20px;
+    border: 2px solid #417933;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.session1 h3,
+.session2 h3,
+.session3 h3 {
+    color: #417933;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.session1 p,
+.session2 p,
+.session3 p {
+    color: #333;
+    font-size: 1.5em;
+    line-height: 1.4em;
+}

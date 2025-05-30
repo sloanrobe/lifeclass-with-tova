@@ -1,8 +1,8 @@
 import React from 'react';
 
-const topics1 = ['Daily Happiness', 'Gratitude', 'Life Purpose', 'Self-Esteem', 'Self-Love', 'Self-Care', 'Connection', 'Growth', 'Friendships', 'Relationships', 'Communication', 'Entrepreneurship'];
-const topics2 = ['Love', 'Success', 'Self-Sufficiency', 'Motivation', 'Stuckness', 'Reflection', 'Journaling', 'Chakras', 'Energy', 'Stillness', 'Breathing', 'Spiritual Guidance'];
-const topics3 = ['Timelines', 'Tolerance', 'Conflict Resolution', 'Judgement', 'Fear', 'Anxiety', 'Impulsivity', 'Rejection', 'Guilt', 'Shame', 'Depression', 'Consciousness'];
+const topics1 = ['Conflict Resolution', 'Consciousness', 'Judgement', 'Depression', 'Impulsivity', 'Tolerance', 'Rejection', 'Chakras', 'Anxiety', 'Shame', 'Guilt', 'Fear'];
+const topics2 = ['Life Purpose', 'Self-Esteem', 'Motivation', 'Journaling', 'Reflection', 'Stuckness', 'Breathing', 'Gratitude', 'Self-Love', 'Self-Care', 'Stillness', 'Growth'];
+const topics3 = ['Spiritual Guidance', 'Entrepreneurship', 'Daily Happiness', 'Communication', 'Self-Sufficiency', 'Relationships', 'Connection', 'Friendships', 'Timelines', 'Success', 'Energy', 'Love'];
 
 function TopicLists({ topicList, className }) {
   return (

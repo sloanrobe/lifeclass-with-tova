@@ -3,7 +3,7 @@ import React from 'react'
 function TopicsBottomBox() {
     return (
         <>
-        <div class="topics-bottom">
+        <div className="topics-bottom">
             <ul>
                 <li>
                     <span>Healing our Inner Child</span>
