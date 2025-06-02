@@ -5,8 +5,8 @@
 }
 
 .tagline-container {
-  background-image: url("images/butterfly-blurred-green-backround.png");
-  background-position: center -10%;
+  background-image: url("/images/beach-blurred-background.jpg");
+  background-size: contain;
   display: flex;
   justify-content: space-between;
   align-items: center;
