@@ -1,6 +1,6 @@
 function MyButton() {
   return (
-    <button className="button-design">Book a Free Consultation</button>
+    <button className="button-design">Let's Get Started Today</button>
   )
 }
 

@@ -4,7 +4,7 @@ function Biography() {
   return (
     <div className="bio-container">   
       <div className="bio-headshot">
-          <img src="images\IMG_1088[2789].webp" alt="Tova Levy profile picture" />
+          <img src="images/lifecoach-headshot.png" alt="Tova Levy profile picture" />
       </div>
       <div className="bio-content">
         <p>My mission is to utilize transformative methods to help people step into their butterfly-ness and out of their cocoons.  I am driven by helping individuals of all ages overcome barriers that affect their personal, emotional, and intellectual growth.  I believe that it is never too late to free oneself from self-imposed boundaries and limitations. I am a student of life who continues to transcend into my truth.</p>

@@ -1,6 +1,45 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react';
+import '../styles/testimonials.css';
 
-const testimonials = [
+const reviewImages = [
+  '/images/lifeclass-review1.PNG',
+  '/images/lifeclass-review2.PNG',
+  '/images/lifeclass-review3.PNG',
+  '/images/lifeclass-review4.PNG',
+  '/images/lifeclass-review5.PNG',
+  '/images/lifeclass-review6.PNG',
+  '/images/lifeclass-review7.PNG',
+];
+
+function Testimonials() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [fade, setFade] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFade(false); // Start fade out
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % reviewImages.length);
+        setFade(true); // Fade in new image
+      }, 500); // Duration of fade out before switching
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div className="testimonials">
+      <div className={`testimonial-image ${fade ? 'fade-in' : 'fade-out'}`}>
+        <img src={reviewImages[currentIndex]} alt={`Review ${currentIndex + 1}`} />
+      </div>
+    </div>
+  );
+}
+
+export default Testimonials;
+
+
+/* const testimonials = [
     `"As a mental health professional and a parenting educator, I usually tell a person that love is the answer.  Love of self. Love of the other.  Love to understand another's choices and behavior.  Mrs. Levy is Love personified.  Those who I have referred to her have changed and healed because of her love. They healed because they discovered the space to find the love within themselves.  I have referred to her cases where I knew love was the answer and she has never failed.  I highly recommend Mrs. Levy.  You won't regret it."`,
     `"Tova is raw, unfiltered and very intuitive.  My life has changed from the moment Tova entered it.  I am enthusiastic about my life and I am present in the now.  I am fearless because of you, Tova.  I look forward to seeing Tova weekly - in every session I continue to learn, grow and evolve.  I am grateful for you, Tova."`,
     `"Meeting with Tova has helped me beyond words.  I came to Tova hurt, my spirit crushed, feeling defeated from life traumas.  From our first meeting, I knew this was something I wanted and needed in my life.  It was like my heart shifted. My mindset changed.  Our sessions have allowed me to finally see me and my potential from another perspective. The confidence that lens has created has given me permission to now tap into that potential.  It's one thing for someone to believe in you and your potential, but when you believe in yourself, this is when the magic happens.  I'm ready to make magic."`,
@@ -20,6 +59,4 @@ function Testimonials() {
             <h2>Testimonials</h2>
         </div>
     )
-}
-
-export default Testimonials
+} */
