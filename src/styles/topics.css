@@ -1,6 +1,7 @@
 .topics-section {
   text-align: center;
   padding: 1rem 0;
+  padding-bottom: 30px;
 }
 
 .topics-section h2 {
@@ -12,7 +13,7 @@
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
-  font-size: 22px;
+  font-size: 1.2rem;
 }
 
 .topicBigBox {
@@ -26,9 +27,19 @@
   background-color: lightgray;
   padding: 20px;
   border-radius: 5%;
-  height: 400px;
-  width: 220px;
+  height: 230px;
+  width: 130px;
+  font-size: 0.8rem;
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.topics1:hover,
+.topics2:hover,
+.topics3:hover {
+  transform: scale(1.25);
+  border-color: #417933;
+  box-shadow: 0 0 15px rgba(65, 121, 51, 0.5);
 }
 
 .topiclist-box {
@@ -38,13 +49,18 @@
   align-items: center;
 }
 
+.topiclist-box h3 {
+  padding-bottom: 20px;
+}
+
 .topics-bottom {
   display: inline-block;
-  border: 10px solid black;
-  border-radius: 10%;
+  border: 2px solid black;
+  border-radius: 5%;
   text-align: center;
   padding: 20px;
   margin: 20px auto;
+  font-size: 1.2rem;
 }
 
 .topics-bottom-wrapper {

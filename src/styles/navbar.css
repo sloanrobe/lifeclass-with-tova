@@ -4,14 +4,17 @@
     align-items: center;
     padding: 10px 20px;
     position: relative;
-    background-color: #809AA7;
-    height: 90px;
+    background-color: #0f471e;
+    height: 50px;
+    border-bottom: 2px solid green;
+    border-top: 2px solid green;
 }
 
 .navbar h1 {
     margin-left: 15px;
     color: white;
     font-size: 2.5rem;
+    font-family: 'Great Vibes';
 }
 
 .nav-links {
@@ -30,23 +33,4 @@
     font-weight: bold;
     font-size: 1.5rem;
     font-family: 'Cormorant Garamond';
-}
-
-.logo {
-    height: 500px;
-    padding: 1.5rem;
-    will-change: filter;
-    transition: filter 300ms;
-}
-.logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-    filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-.logo img {
-    /* height: 60px; */
-    align-items: middle;
-    display: block;
 }

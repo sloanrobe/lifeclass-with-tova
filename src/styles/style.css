@@ -1,49 +1,44 @@
-.tagline {
-  font-family: 'Tai Heritage Pro', serif;
-  font-size: x-large;
-  font-weight: 100;
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.tagline-container {
-  background-image: url("/images/beach-blurred-background.jpg");
-  background-size: contain;
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin: 0 auto;
-  padding: 2rem;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  font-family: 'Cormorant Garamond';
+}
+
+h2 {
   text-align: center;
-  height: 100vh;
-}
-
-.tagline-content {
-  flex: 0.5;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.logo-container {
-  flex: 0.3;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 .teacher {
@@ -53,4 +48,17 @@
 li {
   list-style-type: none;
   text-align: center;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
 }

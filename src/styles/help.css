@@ -3,6 +3,10 @@
     padding: 15px;
 }
 
+.help h2 {
+    font-size: 1.5rem;
+}
+
 .session-types {
     display: flex;
     justify-content: center;
@@ -38,6 +42,6 @@
 .session2 p,
 .session3 p {
     color: #333;
-    font-size: 1.5em;
+    font-size: 1.2em;
     line-height: 1.4em;
 }
