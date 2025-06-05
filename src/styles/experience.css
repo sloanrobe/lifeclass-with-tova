@@ -1,0 +1,12 @@
+.experience {
+    height: 90px;
+    background-color: #0f471e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience img {
+    max-height: 80px;
+    padding-right: 80px;
+}
